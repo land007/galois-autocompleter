@@ -23,12 +23,12 @@ This repository now contains the very first release of the **Galois Project**. W
 Either clone the repository and build the image from docker file or directly run the following command:
 
 ```sh
-docker run --rm -dit -p 3030:3030 iedmrc/galois-autocompleter:latest-gpu
+docker run --rm -it -p 3030:3030 land007/galois-autocompleter-cpu:latest-gpu
 ```
 P.S: CPU image is not available on the *Docker Hub* at the moment so if you want to run it on CPU rather than GPU, clone the repository and build the image as follows:
 
 ```sh
-docker build --build-arg TENSORFLOW_VERSION=1.14.0-py3 -t iedmrc/galois-autocompleter:latest .
+docker build --build-arg -t land007/galois-autocompleter:latest .
 ```
 
 ### Without Docker
